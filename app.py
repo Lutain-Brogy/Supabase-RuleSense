@@ -19,7 +19,7 @@ if choice == "Read":
         st.write('hello')
 
   
-    st.code(f"""
+       st.code(f"""
 CREATE POLICY "{A}"
 ON public."{B}"
 FOR SELECT
