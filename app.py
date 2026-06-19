@@ -13,7 +13,7 @@ if choice == "Read":
     B = st.text_input("Which table is affected") 
     C = st.selectbox('For'
                      ["Anyone lgged in", "One certain person"
-                     ]
+            ]
                     )
     if C == 'Anyone logged in':
        st.write('hello')
