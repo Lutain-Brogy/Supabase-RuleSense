@@ -26,4 +26,4 @@ FOR SELECT
 TO authenticated
 USING {C}
 
-    
+""")
