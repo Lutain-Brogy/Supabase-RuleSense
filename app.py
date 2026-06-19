@@ -9,14 +9,21 @@ choice = st.selectbox(
 
 
 if choice == "Read":
-    A = st.text_input("The user's UI (user_id)")
-    B = st.text_input("Rule name")
-    C = st.text_input("Which table")
+    A = st.text_input("Rule name")
+    B = st.text_input("Which table is affected") 
+    C = st.selectbox('For'
+                     ["Anyone lgged in", "One certain person"
+                     ]
+                    )
+    if C == 'Anyone logged in':
+        st.write('hello')
 
+  
     st.code(f"""
-CREATE POLICY "{B}"
-ON public."{C}"
+CREATE POLICY "{A}"
+ON public."{B}"
 FOR SELECT
 TO authenticated
-USING (auth.uid() = '{A}');
-""")
+USING {C}
+
+    
