@@ -16,9 +16,7 @@ if choice == "Read":
                      ]
                     )
     if C == 'Anyone logged in':
-        st.write('hello')
-
-  
+       st.write('hello')
        st.code(f"""
 CREATE POLICY "{A}"
 ON public."{B}"
