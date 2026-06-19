@@ -18,7 +18,7 @@ if choice == "Read":
     if C == 'Anyone logged in':
        C = "(true);"
     if C == 'One certain person':
-        C = "(auth.uid() = '{D}');":
+        C = "(auth.uid() = '{D}');"
         D = st.text_input('Person id') 
        st.code(f"""
 CREATE POLICY "{A}"
