@@ -20,7 +20,7 @@ if choice == "Read":
     if C == 'One certain person':
         C = "(auth.uid() = '{D}');"
         D = st.text_input('Person id') 
-       st.code(f"""
+        st.code(f"""
 CREATE POLICY "{A}"
 ON public."{B}"
 FOR SELECT
