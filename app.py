@@ -11,10 +11,10 @@ choice = st.selectbox(
 if choice == "Read":
     A = st.text_input("Rule name")
     B = st.text_input("Which table is affected") 
-    C = st.selectbox('For'
-                     ["Anyone lgged in", "One certain person"
-            ]
-       )
+    C = st.selectbox(
+    'For',
+    ["Anyone logged in", "One certain person"]
+)
     if C == 'Anyone logged in':
        st.write('hello')
        st.code(f"""
