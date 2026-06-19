@@ -16,7 +16,10 @@ if choice == "Read":
     ["Anyone logged in", "One certain person"]
 )
     if C == 'Anyone logged in':
-       C = "Hello"
+       C = "(true);"
+    if C == 'One certain person':
+        C = (auth.uid() = '{D}');
+        D = st.text_input('Person id') 
        st.code(f"""
 CREATE POLICY "{A}"
 ON public."{B}"
@@ -25,3 +28,10 @@ TO authenticated
 USING {C}
 
 """)
+
+
+
+
+
+
+
