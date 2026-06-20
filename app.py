@@ -39,14 +39,14 @@ st.title('Supabase Rulesense')
 # ''')
 user_input = st.text_input
 
-tab1, tab2, tab3 = st.tabs("
+tab1, tab2, tab3 = st.tabs("Select policy type"
                             ["Read", "Insert", "Update"]
-                         ")
+                         )
 
 with tab1:
     Table_type = st.selectbox('Select ready type'
                               ["Anyone logged in", "Certain person"] 
-                             ')
+                             )
      if table_type = 'Anyone logged in':
     A = st.text_input('Policy name')
     B = st.text_input('Table name')
