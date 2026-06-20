@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title('Supabase Rulesense')
-
+'''
 choice = st.selectbox(
     "Choose the rule type you want",
     ["Read", "Edit/Delete"]
@@ -37,7 +37,7 @@ FOR SELECT
 TO authenticated
 USING (auth.uid() = "{C}");
 ''')
-
+''' 
 
 
 
