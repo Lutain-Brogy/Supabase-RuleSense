@@ -16,7 +16,16 @@ if choice == "Read":
     ["Anyone logged in", "One certain person"]
 )
     if C == 'Anyone logged in':
-       C = "(true);"
+        A = st.text_input('Name/description')
+        B = st.text_input('Name of table')
+         st.code(f'''
+CREATE POLICY "{A}"
+ON public."{B}"
+FOR SELECT
+TO authenticated
+USING (true);
+''') 
+
     if C == 'One certain person':
         C = "(auth.uid() = {D});"
         D = st.text_input('Person id') 
