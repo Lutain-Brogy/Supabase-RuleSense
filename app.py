@@ -40,8 +40,8 @@ ON {B}.{C}
 FOR SELECT
 TO authenticated
 USING (auth.uid() = "{D}");
-
-       
+''')
+    
 
 
 
