@@ -19,7 +19,7 @@ if mode == 'Write policy':
        A = st.text_input('Policy name')
        B = st.selectbox('Table schema', 
          ["private", "public"])
-        st.write(B)
+       st.write(B)
        C = st.text_input('Table name')
        st.code(f'''
 CREATE POLICY "{A}"
