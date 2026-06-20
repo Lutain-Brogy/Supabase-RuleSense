@@ -44,19 +44,21 @@ tab1, tab2, tab3 = st.tabs("Select policy type"
                          )
 
 with tab1:
-   table_type = st.selectbox('Select ready type'
-                              ["Anyone logged in", "Certain person"] 
-                             )
-  
-if table_type = 'Anyone logged in':
-A = st.text_input('Policy name')
-B = st.text_input('Table name')
-         st.code(f'''
+    table_type = st.selectbox(
+        'Select read type',
+        ["Anyone logged in", "Certain person"]
+    )
+
+    if table_type == 'Anyone logged in':
+        A = st.text_input('Policy name')
+        B = st.text_input('Table name')
+
+        st.code(f'''
 CREATE POLICY "{A}"
 ON public."{B}"
 FOR SELECT
 TO authenticated
 USING (true);
-''')          
+''')
 
 
