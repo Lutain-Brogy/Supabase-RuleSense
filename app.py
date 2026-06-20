@@ -17,7 +17,7 @@ if mode == 'Write policy':
 
      with tab1:
        A = st.text_input('Policy name')
-       B = st.selectbox('Table schema', 
+       B = st.selectbox('table schema', 
          ["private", "public"])
   
        C = st.text_input('Table name')
