@@ -44,7 +44,7 @@ tab1, tab2, tab3 = st.tabs("Select policy type"
                          )
 
 with tab1:
-   Table_type = st.selectbox('Select ready type'
+   table_type = st.selectbox('Select ready type'
                               ["Anyone logged in", "Certain person"] 
                              )
   
