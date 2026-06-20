@@ -29,7 +29,7 @@ USING (true);
     if C == 'One certain person':
         A = st.text_input('Policy name/role')
         B = st.text_input('Table name')
-        C = St.text_input('User ID')
+        C = st.text_input('User ID')
         st.code(f'''
 CREATE POLICY "{A}"
 ON public."{B}"
