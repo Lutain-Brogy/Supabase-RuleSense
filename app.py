@@ -39,9 +39,11 @@ st.title('Supabase Rulesense')
 # ''')
 user_input = st.text_input
 
-tab1, tab2, tab3 = st.tabs("Select policy type"
-                            ["Read", "Insert", "Update"]
-                         )
+st.write("Select policy type")
+
+tab1, tab2, tab3 = st.tabs(
+    ["Read", "Insert", "Update"]
+)
 
 with tab1:
     table_type = st.selectbox(
