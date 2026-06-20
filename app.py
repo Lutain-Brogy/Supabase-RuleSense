@@ -13,7 +13,26 @@ if mode == 'Write policy':
   
   if Rule_type == 'SELECT':
      st.write('Which type of read policy sir/madam?')
-     tab1, tab2, = st.tabs(["Anyone can read", "One certain person"]) 
+     tab1, tab2, = st.tabs(["Anyone can read", "One certain person"])
+
+     with tab1:
+       A = st.text_input('Policy name')
+       B = st.selectbox(["private", "public"])
+       C = st.text_input('Table name')
+       st.code(f'''
+CREATE POLICY "{A}"
+ON {B}."{C}"
+FOR SELECT
+TO authenticated
+USING (true);
+''')
+       
+
+
+
+
+
+
                                
         
        
