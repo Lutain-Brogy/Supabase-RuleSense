@@ -29,17 +29,20 @@ TO authenticated
 USING (true);
 ''')
   with tab2:
-      A = st.text_input('Policy name')
-      B = st.selectbox('Table schema', 
-         ["private", "public"])
-      C = st.text_intpu('Table name')
-      D = st.text_imput('User ID')
-      st.code(f'''
+    A = st.text_input("Policy name")
+    B = st.selectbox(
+        "Table schema",
+        ["private", "public"]
+    )
+    C = st.text_input("Table name")
+    D = st.text_input("User ID")
+
+    st.code(f'''
 CREATE POLICY "{A}"
 ON {B}.{C}
 FOR SELECT
 TO authenticated
-USING (auth.uid() = "{D}");
+USING (auth.uid() = '{D}');
 ''')
     
 
