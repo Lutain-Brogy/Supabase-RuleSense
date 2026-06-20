@@ -17,9 +17,9 @@ if mode == 'Write policy':
 
      with tab1:
        A = st.text_input('Policy name')
-       B = st.selectbox(["private", "public"])
-       if B == 'private' or 'public':
-               st.write()
+       B = st.selectbox('Table schema', 
+         ["private", "public"])
+               st.write(B)
        C = st.text_input('Table name')
        st.code(f'''
 CREATE POLICY "{A}"
