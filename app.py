@@ -18,7 +18,7 @@ if choice == "Read":
     if C == 'Anyone logged in':
         A = st.text_input('Name/description')
         B = st.text_input('Name of table')
-         st.code(f'''
+        st.code(f'''
 CREATE POLICY "{A}"
 ON public."{B}"
 FOR SELECT
