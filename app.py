@@ -39,7 +39,7 @@ USING (true);
 
     st.code(f'''
 CREATE POLICY "{A}"
-ON {B}.{C}
+ON {B}."{C}"
 FOR SELECT
 TO authenticated
 USING (auth.uid() = '{D}');
