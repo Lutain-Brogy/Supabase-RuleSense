@@ -28,7 +28,7 @@ FOR SELECT
 TO authenticated
 USING (true);
 ''')
-    with tab2:
+  with tab2:
       A = st.text_input('Policy name')
       B = st.selectbox('Table schema', 
          ["private", "public"])
