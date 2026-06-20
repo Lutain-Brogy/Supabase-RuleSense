@@ -1,12 +1,9 @@
 import streamlit as st
 
 st.title('Supabase Rulesense')
-user_input = st.text_input
 
 
-mode = st.selectbox('What would you like to do today'
-                    ["Write policy", "Ask questiond"]
-                   )
+mode = st.selectbox("What would you like to do today", ["Write policy", "Ask questions"])
 
 if mode == 'What would you like to do today':
 
