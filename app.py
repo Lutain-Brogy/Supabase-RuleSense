@@ -49,8 +49,8 @@ with tab1:
                              )
   
   if table_type = 'Anyone logged in':
-   A = st.text_input('Policy name')
-   B = st.text_input('Table name')
+A = st.text_input('Policy name')
+B = st.text_input('Table name')
          st.code(f'''
 CREATE POLICY "{A}"
 ON public."{B}"
