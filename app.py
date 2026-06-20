@@ -29,12 +29,12 @@ TO authenticated
 USING (true);
 ''')
   with tab2:
-    A = st.text_input("Policy name")
+    A = st.text_input("policy name")
     B = st.selectbox(
         "Table schema",
         ["private", "public"]
     )
-    C = st.text_input("Table name")
+    C = st.text_input("table name")
     D = st.text_input("User ID")
 
     st.code(f'''
