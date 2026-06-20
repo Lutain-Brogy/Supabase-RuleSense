@@ -27,16 +27,16 @@ USING (true);
 ''') 
 
     if C == 'One certain person':
-        C = "(auth.uid() = {D});"
-        D = st.text_input('Person id') 
-        st.code(f"""
+        A = st.text_inupt('Policy name/role')
+        B = st.text_input('Table name')
+        C = St.text_input('User ID')
+        st.code(f'''
 CREATE POLICY "{A}"
 ON public."{B}"
 FOR SELECT
 TO authenticated
-USING {C}
-
-""")
+USING (auth.uid() = "{C}");
+''')
 
 
 
