@@ -6,22 +6,19 @@ st.title('Supabase Rulesense')
 start1, = st.tabs(["Write policy"])  # "Ask questions", "Smart policy generating"
 
 with start1:
-    write_type = st.selectbox(
-        "Choose the writing style",
+tab1, tab2 = st.tabs(
         ["Explanatory", "Straightforward"]
     )
     
-
-    if write_type == "Explanatory":
+with tab1:
         user_input = st.text_input(
             "Describe what you want the policy to do"
         )
 
 
-    elif write_type == 'Straightforward':
-               Rule_type = st.selectbox(
-            "Choose the required type of policy",
-            ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"]
+with tab2:
+Rule_type = st.selectbox("Choose the required type of policy",
+                         ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"]
         )
    
                if Rule_type == 'SELECT':
