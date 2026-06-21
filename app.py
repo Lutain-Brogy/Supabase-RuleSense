@@ -33,7 +33,7 @@ FOR SELECT
 TO authenticated
 USING (true);
 ''')
-  with tab2:
+with tab2:
     A = st.text_input("policy name")
     B = st.selectbox(
         "Table schema",
