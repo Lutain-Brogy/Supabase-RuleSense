@@ -24,7 +24,7 @@ with start1:
             ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"]
         )
    
-      if Rule_type == 'SELECT':
+               if Rule_type == 'SELECT':
          st.write('Which type of read policy sir/madam?')
          tab1, tab2, = st.tabs(["Anyone can read", "One certain person"])
 
