@@ -19,13 +19,13 @@ with tab2:
                          ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"]
         )
    
-               if Rule_type == 'SELECT':
-                st.write('Which type of read policy sir/madam?')
+   if Rule_type == 'SELECT':
+       st.write('Which type of read policy sir/madam?')
 tab1, tab2, = st.tabs(["Anyone can read", "One certain person"])
 
 with tab1:
-       A = st.text_input('Policy name')
-       B = st.selectbox('table schema', 
+      A = st.text_input('Policy name')
+      B = st.selectbox('table schema', 
          ["private", "public"])
   
        C = st.text_input('Table name')
