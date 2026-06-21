@@ -16,9 +16,9 @@ with start1:
       Rule_type = st.selectbox("Choose the required type of policy",
                            ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"])
   
-  if Rule_type == 'SELECT':
-     st.write('Which type of read policy sir/madam?')
-     tab1, tab2, = st.tabs(["Anyone can read", "One certain person"])
+      if Rule_type == 'SELECT':
+         st.write('Which type of read policy sir/madam?')
+         tab1, tab2, = st.tabs(["Anyone can read", "One certain person"])
 
      with tab1:
        A = st.text_input('Policy name')
