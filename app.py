@@ -6,14 +6,12 @@ st.title('Supabase Rulesense')
 start1, = st.tabs(["Write policy"])  # "Ask questions", "Smart policy generating"
 
 with start1:
-tab1, tab2 = st.tabs(
+ tab1, tab2 = st.tabs(
         ["Explanatory", "Straightforward"]
     )
     
 with tab1:
-        user_input = st.text_input(
-            "Describe what you want the policy to do"
-        )
+ user_input = st.text_input("Describe what you want the policy to do")
 
 
 with tab2:
