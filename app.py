@@ -9,10 +9,10 @@ with start2:
    
 with start1:
    write_type = st.selectbox(["Explanatory", "Straightforward"])
-   if write_type == 'Explanatory':
+    if write_type == 'Explanatory':
      user_input = st.text_input
 
-   if write_type == 'Straightforward':
+    if write_type == 'Straightforward':
       Rule_type = st.selectbox("Choose the required type of policy",
                            ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"])
   
