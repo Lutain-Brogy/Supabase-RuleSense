@@ -16,6 +16,7 @@ with start1:
             "Describe what you want the policy to do"
         )
 
+
     elif write_type == 'Straightforward':
                Rule_type = st.selectbox(
             "Choose the required type of policy",
