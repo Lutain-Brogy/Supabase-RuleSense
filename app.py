@@ -20,7 +20,7 @@ with start1:
          st.write('Which type of read policy sir/madam?')
          tab1, tab2, = st.tabs(["Anyone can read", "One certain person"])
 
-     with tab1:
+with tab1:
        A = st.text_input('Policy name')
        B = st.selectbox('table schema', 
          ["private", "public"])
