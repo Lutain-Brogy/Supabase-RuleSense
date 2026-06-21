@@ -28,7 +28,7 @@ with tab1:
       B = st.selectbox('table schema', 
          ["private", "public"])
   
-       C = st.text_input('Table name')
+      C = st.text_input('Table name')
        st.code(f'''
 CREATE POLICY "{A}"
 ON {B}."{C}"
