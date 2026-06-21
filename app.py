@@ -10,7 +10,7 @@ with start1:
         "Choose the writing style",
         ["Explanatory", "Straightforward"]
     )
-    )
+    
 
     if write_type == "Explanatory":
         user_input = st.text_input(
