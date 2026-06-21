@@ -29,7 +29,7 @@ with tab1:
          ["private", "public"])
   
       C = st.text_input('Table name')
-       st.code(f'''
+      st.code(f'''
 CREATE POLICY "{A}"
 ON {B}."{C}"
 FOR SELECT
