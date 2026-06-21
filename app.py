@@ -4,10 +4,10 @@ st.title('Supabase Rulesense')
 
 
 start1, start2, start3 = st.tabs(["Write policy", "Ask questions" , "Smart policy generating"])
- with start2:
+with start2:
    user_input = st.text_input
    
- with start1:
+with start1:
    write_type = st.selectbox("Explanatory", "Straightforward"])
    if write_type == 'Explanatory':
      user_input = st.text_input
