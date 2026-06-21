@@ -8,14 +8,22 @@ with start2:
    user_input = st.text_input
    
 with start1:
-   write_type = st.selectbox(["Explanatory", "Straightforward"])
-    if write_type == 'Explanatory':
-     user_input = st.text_input
+    write_type = st.selectbox(
+        "Choose the writing style",
+        ["Explanatory", "Straightforward"]
+    )
 
-    if write_type == 'Straightforward':
-      Rule_type = st.selectbox("Choose the required type of policy",
-                           ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"])
-  
+    if write_type == "Explanatory":
+        user_input = st.text_input(
+            "Describe what you want the policy to do"
+        )
+
+    elif write_type == 'Straightforward':
+               Rule_type = st.selectbox(
+            "Choose the required type of policy",
+            ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"]
+        )
+   
       if Rule_type == 'SELECT':
          st.write('Which type of read policy sir/madam?')
          tab1, tab2, = st.tabs(["Anyone can read", "One certain person"])
