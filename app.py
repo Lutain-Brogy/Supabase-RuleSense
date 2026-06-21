@@ -3,12 +3,13 @@ import streamlit as st
 st.title('Supabase Rulesense')
 
  #start2, start3
-start1 = st.tabs(["Write policy"])# "Ask questions" , "Smart policy generating"])
-   
+start1, = st.tabs(["Write policy"])  # "Ask questions", "Smart policy generating"
+
 with start1:
     write_type = st.selectbox(
         "Choose the writing style",
         ["Explanatory", "Straightforward"]
+    )
     )
 
     if write_type == "Explanatory":
