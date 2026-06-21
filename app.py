@@ -14,8 +14,7 @@ with start1:
 
    if write_type == 'Straightforward':
    
-  Rule_type = st.selectbox(
-    "Choose the required type of policy",
+  Rule_type = st.selectbox("Choose the required type of policy",
     ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"]
   )  
 
