@@ -15,9 +15,7 @@ with start1:
    if write_type == 'Straightforward':
    
   Rule_type = st.selectbox("Choose the required type of policy",
-    ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"]
-  )  
-
+                           ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"])
   
   if Rule_type == 'SELECT':
      st.write('Which type of read policy sir/madam?')
