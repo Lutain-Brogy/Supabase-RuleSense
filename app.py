@@ -15,7 +15,7 @@ with tab1:
 
 
 with tab2:
-Rule_type = st.selectbox("Choose the required type of policy",
+ Rule_type = st.selectbox("Choose the required type of policy",
                          ["SELECT", "INSERT", "UPDATE", "DELETE", "ALL", "REFERENCES", "TRIGGER"]
         )
    
